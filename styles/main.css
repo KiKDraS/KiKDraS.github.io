@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Pretty Neat";
+    src: url('../fonts/prettyNeat.ttf');
+}
+
+body{
+    font-family: 'Pretty Neat'; 
+    font-size: 16px; 
+    height: 100vh;
+    /*Background responsivo*/
+    background-image: url('../images/portfolio/corchoGrande.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    /*Borde del background*/
+    border: 25px groove #caab62;    
+    box-shadow: inset 5px 5px 15px;
+}
+
+header{
+    text-align: center;
+}
+
+#datos img{
+    width: 10rem; 
+    position: absolute; 
+    top: -30px;
+    left: -25px;
+}
+
+#datos div{
+    width: 20rem;
+    height: 18rem;
+    background-color: white;
+    position: relative;
+    border: 1px black;
+}
+
+#datos div::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 20px;
+    width: 100%;
+    left: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+    background-size: 200%;
+}
+
+#muestras img{
+    width: 15rem;
+}
+
+
+/*Celulares Portrait*/
+
+@media (max-width: 575.98px) { 
+    body{
+        text-align: center;
+    }
+
+    #datos img{
+        width: 7rem; 
+        position: absolute; 
+        top: -30px;
+        left: -25px;
+    }
+    
+    #datos div{
+        width: 12.5rem;
+        height: 7rem;
+        background-color: white;
+        position: relative;
+        border: 1px black;
+        margin: 2.5rem auto;
+    }     
+
+    #muestras img{
+        width: 12.5rem;
+    }
+}
+
+
+/*Celulares landscape*/
+
+@media (min-width: 650px) and (orientation: landscape) and (max-width: 768px){ 
+    #tituloPortfolio{
+        width: 45%;
+    }
+
+    #portfolio{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    #datos{
+        width: 40%;
+    }
+
+    #datos img{
+        width: 4rem; 
+        position: absolute; 
+        top: -30px;
+        left: -25px;
+        /*Medidas para tablet*/
+        /* top: -20px;
+        left: -10px; */
+    }
+    
+    #datos div{
+        width: 9.5rem;
+        height: 6rem;
+        background-color: white;
+        position: relative;
+        border: 1px black;
+        margin: 2.5rem;
+    }     
+
+    #muestras{
+        width: 60%;
+    }
+
+    #muestras img{
+        width: 7.5rem;
+    }
+}
+
+/*Tablets*/
+@media (min-width: 768px) and (orientation: portrait){ 
+    body{
+        text-align: center;
+    }
+
+    #tituloPortfolio{
+        width: 60%;
+    }
+
+    #datos{
+        width: 90%;
+        margin: 2rem auto;        
+    }
+
+    #datos img{
+        width: 8rem; 
+        position: absolute; 
+        top: -30px;
+        left: -25px;
+    }
+    
+    #datos div{
+        width: 20.5rem;
+        height: 10rem;
+        background-color: white;
+        position: relative;
+        border: 1px black;
+        margin: auto; 
+    }     
+
+    #muestras{
+        width: 100%;
+    }
+
+    #muestras img{
+        width: 10.5rem;
+    }
+}
