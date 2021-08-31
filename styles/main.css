@@ -15,11 +15,25 @@ body{
     background-attachment: fixed;
     /*Borde del background*/
     border: 25px groove #caab62;    
-    box-shadow: inset 5px 5px 15px;
+    box-shadow: inset 5px 5px 15px;    
+}
+
+#contenedor{
+    overflow: auto;
+    height: 90vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 header{
     text-align: center;
+}
+
+#portfolio{
+    width: 85%;
+    margin: 0 auto;
 }
 
 #datos img{
@@ -49,7 +63,7 @@ header{
 }
 
 #muestras img{
-    width: 15rem;
+    width: 12rem;
 }
 
 
