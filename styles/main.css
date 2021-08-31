@@ -74,6 +74,11 @@ header{
         text-align: center;
     }
 
+    #contenedor{
+        overflow: auto;
+        height: 90vh;
+    }
+
     #datos img{
         width: 7rem; 
         position: absolute; 
