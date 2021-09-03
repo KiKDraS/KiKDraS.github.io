@@ -11,34 +11,59 @@
 <body class="container-fluid ">
     <div id="contenedor">
         <header>
-            <img id="tituloPortfolio" class="col-12 col-md-4" src="images/portfolio/tituloPortfolio.png" alt="">
+            <img id="tituloPortfolio" class="col-12 col-md-4" src="images/portfolio/tituloPortfolio.webp" alt="">
+            <!-- <h1 id="tituloPortfolio">Portfolio - Anahí Foresi</h1> -->
         </header>
         <main>
             <section id="portfolio" class="row row-cols-1 row-cols-md-2">
                 <section id="datos" class="col-12 col-md-4 p-4">                
                     <div>
-                        <img src="images/portfolio/polariodRotada.webp" alt="">
+                        <img src="images/portfolio/polariodRotada.webp" alt="" id="foto">  
                         <ul>
-                            <li></li>
-                        </ul>
-                    </div>
+                            <li>
+                                <img src="images/portfolio/github_icon.png" alt="icono github">
+                                <a href="http://https://github.com/KiKDraS" target="_blank" rel="noopener noreferrer">Github</a>
+                            </li>
+                            <li> 
+                                <img src="images/portfolio/linkedin_icon.png" alt="icono linkedin"> 
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                            </li>
+                            <li> 
+                                <img src="images/portfolio/email_icon.png" alt="icono mail"> 
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Email</a>
+                            </li>
+                        </ul>                      
+                    </div>                    
                 </section>
-                <section id="muestras" class="col-12 col-md-8">
-                    <div class="row p-2 justify-content-between">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
+                <section id="muestras" class="col-12 col-md-8 p-2">
+                    <div class="row">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/portfolio/polariod.webp" alt=""></button>
+                        <!-- <img src="images/portfolio/polariod.webp" alt="">
+                        <img src="images/portfolio/polariod.webp" alt=""> -->
                     </div>
-                    <div class="row p-2 justify-content-between">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
-                        <img src="images/portfolio/polariod.png" alt="" class="col-4">
+                    <div class="row">
+                        <!-- <img src="images/portfolio/polariod.webp" alt="">
+                        <img src="images/portfolio/polariod.webp" alt="">
+                        <img src="images/portfolio/polariod.webp" alt=""> -->
                     </div>
                 </section>
             </section>        
-            <footer></footer>
+            <footer>
+                &copy;Anahí Foresi - Imagen de fondo: <a href="http://www.freepik.com">Layerace / Freepik</a>
+            </footer>
         </main>
-    </div>    
+    </div>       
+
+    <!-- Full screen modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content estilosModal">          
+                <button type="button" class="bg-danger text-white estilosCierre" data-bs-dismiss="modal" aria-label="Close">X</button> 
+                <iframe src="https://kikdras.github.io/" frameborder="0" class="estilosIframe"></iframe>
+            </div>
+        </div>
+    </div>
+  
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

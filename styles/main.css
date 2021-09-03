@@ -2,9 +2,10 @@
     font-family: "Pretty Neat";
     src: url('../fonts/prettyNeat.ttf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 body{
-    font-family: 'Pretty Neat'; 
+    font-family: 'Pretty Neat', cursive; 
     font-size: 16px; 
     height: 100vh;
     /*Background responsivo*/
@@ -31,12 +32,38 @@ header{
     text-align: center;
 }
 
+#tituloPortfolio{
+    background-image: url('../images/portfolio/titulos.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: #caab62;
+}
+
+
 #portfolio{
     width: 85%;
     margin: 0 auto;
 }
 
-#datos img{
+#foto{
     width: 10rem; 
     position: absolute; 
     top: -30px;
@@ -62,10 +89,74 @@ header{
     background-size: 200%;
 }
 
+#datos div ul{
+    position: absolute;
+    top: 75px;
+    left: 110px;
+    z-index: 4;
+    list-style-type: none;
+}
+
+#datos div ul img{
+    width: 2rem;
+}
+
+#datos div ul li{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem auto;
+}
+
+#muestras div{        
+    display: flex;
+    justify-content: space-around;
+}
+
+/* #muestras button{
+    background-image: url('../images/portfolio/polariod.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11.5rem;
+    height: 13.5rem;
+} */
+
+#muestras button{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+}
+
 #muestras img{
+    display: block;
     width: 12rem;
 }
 
+footer{
+    position:absolute;
+    bottom: 0;    
+    left: 40vw;
+}
+
+/*Modal*/
+.estilosModal{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.estilosCierre{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.estilosIframe{
+    width: 98vw;
+    height: 98vh;
+    margin: auto;
+}
 
 /*Celulares Portrait*/
 
